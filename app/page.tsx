@@ -1,11 +1,36 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-zinc-950 text-white font-sans">
       
+      {/* Navigation Bar & Logo */}
+      <header className="w-full border-b border-zinc-900 bg-zinc-950/80 backdrop-blur-md sticky top-0 z-50">
+        <div className="max-w-7xl mx-auto px-8 h-20 flex items-center justify-between">
+          
+          {/* Logo Brand */}
+          <div className="flex items-center gap-3">
+            {/* Aquí llamamos a tu logo personalizado */}
+            <Image 
+              src="/logo.png" 
+              alt="Garphus Cloud Logo" 
+              width={45} 
+              height={45} 
+              className="object-contain"
+            />
+            <span className="font-bold text-2xl tracking-tight text-white">Garphus<span className="text-blue-500">Cloud</span></span>
+          </div>
+
+          {/* Nav Link */}
+          <a href="mailto:santiago@garphus.cloud" className="text-sm font-medium text-zinc-400 hover:text-white transition-colors hidden md:block">
+            Contact Support
+          </a>
+        </div>
+      </header>
+
       {/* Hero Section */}
-      <section className="px-8 pt-24 pb-16 md:px-24 md:pt-32 text-center max-w-5xl mx-auto">
+      <section className="px-8 pt-16 pb-16 md:px-24 md:pt-24 text-center max-w-5xl mx-auto">
         <h1 className="text-5xl md:text-7xl font-extrabold tracking-tighter mb-6 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
           Garphus Cloud AI
         </h1>
