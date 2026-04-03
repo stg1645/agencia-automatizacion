@@ -1,4 +1,21 @@
-{/* Services Section */}
+import Link from "next/link";
+
+export default function Home() {
+  return (
+    <main className="min-h-screen bg-zinc-950 text-white font-sans">
+      
+      {/* Hero Section */}
+      <section className="px-8 pt-24 pb-16 md:px-24 md:pt-32 text-center max-w-5xl mx-auto">
+        <h1 className="text-5xl md:text-7xl font-extrabold tracking-tighter mb-6 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
+          Garphus Cloud AI
+        </h1>
+        <p className="text-xl text-zinc-400 max-w-2xl mx-auto">
+          Empowering your business with intelligent agents and autonomous workflows. 
+          Official WhatsApp Business integrations powered by YCloud and n8n.
+        </p>
+      </section>
+
+      {/* Services Section */}
       <section className="px-8 pb-20 md:px-24 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         
         {/* Card 1: WhatsApp */}
@@ -50,3 +67,57 @@
         </div>
 
       </section>
+
+      {/* Use Cases Section */}
+      <section className="px-8 py-16 bg-zinc-900/30 border-y border-zinc-900">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-10">Tailored Solutions For</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            <div>
+              <h4 className="text-lg font-semibold text-blue-400 mb-2">International Remittances</h4>
+              <p className="text-sm text-zinc-400">Automated multi-currency quotes, KYC data collection, and transaction tracking via WhatsApp.</p>
+            </div>
+            <div>
+              <h4 className="text-lg font-semibold text-blue-400 mb-2">Logistics & Delivery</h4>
+              <p className="text-sm text-zinc-400">Real-time shipping updates and automated dispatch coordination.</p>
+            </div>
+            <div>
+              <h4 className="text-lg font-semibold text-blue-400 mb-2">Retail & E-Commerce</h4>
+              <p className="text-sm text-zinc-400">24/7 intelligent sales assistants and automated inventory alerts.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section className="px-8 py-20 max-w-4xl mx-auto text-center">
+        <h2 className="text-3xl font-bold mb-6">Let's Build Together</h2>
+        <p className="text-zinc-400 mb-8">Ready to automate your operations? Get in touch with our engineering team.</p>
+        <div className="flex flex-col md:flex-row justify-center items-center gap-6">
+          <a href="mailto:santiago@garphus.cloud" className="px-8 py-3 bg-blue-600 hover:bg-blue-500 text-white rounded-full font-medium transition-colors">
+            santiago@garphus.cloud
+          </a>
+          <a href="https://wa.me/573000000000" target="_blank" rel="noopener noreferrer" className="px-8 py-3 bg-zinc-800 hover:bg-zinc-700 text-white rounded-full font-medium border border-zinc-700 transition-colors">
+            WhatsApp Business
+          </a>
+        </div>
+      </section>
+
+      {/* Robust Footer */}
+      <footer className="border-t border-zinc-900 py-12 px-8">
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+          <div className="text-left text-sm text-zinc-500">
+            <p className="font-semibold text-zinc-300 mb-1">Garphus Cloud</p>
+            <p>Valledupar, Cesar, Colombia</p>
+            <p>© 2026 All rights reserved.</p>
+          </div>
+          <div className="flex gap-6 text-sm text-zinc-500">
+            <Link href="/privacidad" className="hover:text-blue-400 transition-colors">Privacy Policy</Link>
+            <Link href="/terminos" className="hover:text-blue-400 transition-colors">Terms of Service</Link>
+          </div>
+        </div>
+      </footer>
+
+    </main>
+  );
+}
