@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-zinc-950 text-white font-sans">
+    <main className="min-h-screen bg-zinc-950 text-white font-sans text-balance">
       
       {/* Navigation Bar & Logo */}
       <header className="w-full border-b border-zinc-900 bg-zinc-950/80 backdrop-blur-md sticky top-0 z-50">
@@ -11,12 +11,11 @@ export default function Home() {
           
           {/* Logo Brand */}
           <div className="flex items-center gap-3">
-            {/* Aquí llamamos a tu logo personalizado */}
             <Image 
               src="/logo.png" 
               alt="Garphus Cloud Logo" 
-              width={45} 
-              height={45} 
+              width={40} 
+              height={40} 
               className="object-contain"
             />
             <span className="font-bold text-2xl tracking-tight text-white">Garphus<span className="text-blue-500">Cloud</span></span>
@@ -24,7 +23,7 @@ export default function Home() {
 
           {/* Nav Link */}
           <a href="mailto:santiago@garphus.cloud" className="text-sm font-medium text-zinc-400 hover:text-white transition-colors hidden md:block">
-            Contact Support
+            Support: santiago@garphus.cloud
           </a>
         </div>
       </header>
@@ -34,7 +33,7 @@ export default function Home() {
         <h1 className="text-5xl md:text-7xl font-extrabold tracking-tighter mb-6 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
           Garphus Cloud AI
         </h1>
-        <p className="text-xl text-zinc-400 max-w-2xl mx-auto">
+        <p className="text-xl text-zinc-400 max-w-2xl mx-auto leading-relaxed">
           Empowering your business with intelligent agents and autonomous workflows. 
           Official WhatsApp Business integrations powered by YCloud and n8n.
         </p>
@@ -96,11 +95,11 @@ export default function Home() {
       {/* Use Cases Section */}
       <section className="px-8 py-16 bg-zinc-900/30 border-y border-zinc-900">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-10">Tailored Solutions For</h2>
+          <h2 className="text-3xl font-bold text-center mb-10 text-white">Tailored Solutions For</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div>
               <h4 className="text-lg font-semibold text-blue-400 mb-2">International Remittances</h4>
-              <p className="text-sm text-zinc-400">Automated multi-currency quotes, KYC data collection, and transaction tracking via WhatsApp.</p>
+              <p className="text-sm text-zinc-400">Automated multi-currency quotes and transaction tracking via WhatsApp.</p>
             </div>
             <div>
               <h4 className="text-lg font-semibold text-blue-400 mb-2">Logistics & Delivery</h4>
@@ -114,16 +113,16 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Contact Section */}
+      {/* Contact Section - Waitlist Option */}
       <section className="px-8 py-20 max-w-4xl mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-6">Let's Build Together</h2>
-        <p className="text-zinc-400 mb-8">Ready to automate your operations? Get in touch with our engineering team.</p>
+        <h2 className="text-3xl font-bold mb-6">Let&apos;s Build Together</h2>
+        <p className="text-zinc-400 mb-8">Ready to automate your operations? Join our waitlist to start your transformation.</p>
         <div className="flex flex-col md:flex-row justify-center items-center gap-6">
-          <a href="mailto:santiago@garphus.cloud" className="px-8 py-3 bg-blue-600 hover:bg-blue-500 text-white rounded-full font-medium transition-colors">
-            santiago@garphus.cloud
-          </a>
-          <a href="https://wa.me/573000000000" target="_blank" rel="noopener noreferrer" className="px-8 py-3 bg-zinc-800 hover:bg-zinc-700 text-white rounded-full font-medium border border-zinc-700 transition-colors">
-            WhatsApp Business
+          <a 
+            href="mailto:santiago@garphus.cloud?subject=I%20want%20to%20automate%20my%20business" 
+            className="px-10 py-4 bg-blue-600 hover:bg-blue-500 text-white rounded-full font-bold transition-all shadow-lg shadow-blue-600/20 active:scale-95"
+          >
+            Join the Waitlist
           </a>
         </div>
       </section>
