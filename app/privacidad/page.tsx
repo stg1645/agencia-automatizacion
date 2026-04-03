@@ -5,36 +5,40 @@ export default function PrivacidadPage() {
     <main className="min-h-screen bg-zinc-950 text-white p-8 md:p-24 font-sans">
       <div className="max-w-3xl mx-auto">
         <Link href="/" className="text-blue-500 hover:text-blue-400 mb-8 inline-block transition-colors">
-          ← Volver al inicio
+          ← Back to Home
         </Link>
         
-        <h1 className="text-4xl font-bold mb-8">Política de Privacidad</h1>
+        <h1 className="text-4xl font-bold mb-8">Privacy Policy</h1>
         
         <div className="space-y-6 text-zinc-300 leading-relaxed">
-          <p><strong>Última actualización:</strong> Abril de 2026</p>
+          <p><strong>Last Updated:</strong> April 2026</p>
           
-          <h2 className="text-2xl font-semibold text-white mt-8">1. Información que recopilamos</h2>
+          <h2 className="text-2xl font-semibold text-white mt-8">1. Information We Collect</h2>
           <p>
-            Nuestra Agencia de Automatización recopila información básica de contacto y datos de uso exclusivamente para proveer servicios de integración de software, automatización de flujos y conexión con la API de WhatsApp Business a través de proveedores autorizados (como YCloud). No vendemos ni compartimos sus datos con terceros no autorizados.
+            Garphus Cloud AI collects basic contact information and usage data exclusively to provide software integration services, workflow automation, and connection to the WhatsApp Business API through authorized providers (such as YCloud). We do not sell or share your data with unauthorized third parties.
           </p>
 
-          <h2 className="text-2xl font-semibold text-white mt-8">2. Uso de la API de WhatsApp</h2>
+          <h2 className="text-2xl font-semibold text-white mt-8">2. Use of WhatsApp API</h2>
           <p>
-            Al utilizar nuestros servicios de automatización de WhatsApp, los mensajes son procesados a través de la infraestructura de Meta y nuestros servidores seguros en la nube. Nos adherimos estrictamente a las Políticas de Comercio y de WhatsApp Business. Los datos de los usuarios finales que interactúan con nuestros agentes de IA se utilizan temporalmente para generar respuestas coherentes y ejecutar las acciones solicitadas.
+            By using our WhatsApp automation services, messages are processed through Meta's infrastructure and our secure cloud servers. We strictly adhere to the Commerce and WhatsApp Business Policies. End-user data interacting with our AI agents is used temporarily to generate coherent responses and execute requested actions.
           </p>
 
-          <h2 className="text-2xl font-semibold text-white mt-8">3. Retención y Seguridad</h2>
+          <h2 className="text-2xl font-semibold text-white mt-8">3. Retention and Security</h2>
           <p>
-            Implementamos medidas de seguridad estándar de la industria para proteger su información. Los historiales de chat procesados por nuestros agentes (como Cosmo) y orquestados mediante n8n se retienen únicamente el tiempo necesario para el contexto de la conversación o según lo estipulado en los acuerdos de nivel de servicio con cada cliente.
+            We implement industry-standard security measures to protect your information. Chat histories processed by our agents and orchestrated via n8n are retained only as long as necessary for the context of the conversation or as stipulated in the service level agreements with each client.
           </p>
 
-          <h2 className="text-2xl font-semibold text-white mt-8">4. Jurisdicción</h2>
+          <h2 className="text-2xl font-semibold text-white mt-8">4. Jurisdiction</h2>
           <p>
-            Esta política se rige bajo las leyes de la República de Colombia, operando desde Valledupar, Cesar. Cualquier disputa será resuelta en esta jurisdicción.
+            This policy is governed by the laws of the Republic of Colombia, operating from Valledupar, Cesar. Any dispute will be resolved in this jurisdiction.
+          </p>
+
+          <h2 className="text-2xl font-semibold text-white mt-8">5. Contact Us</h2>
+          <p>
+            For inquiries related to your data, deletion of information, or support regarding our integrations, please contact us at <strong>santiago@garphus.cloud</strong>.
           </p>
         </div>
       </div>
     </main>
   );
 }
-

@@ -5,32 +5,32 @@ export default function TerminosPage() {
     <main className="min-h-screen bg-zinc-950 text-white p-8 md:p-24 font-sans">
       <div className="max-w-3xl mx-auto">
         <Link href="/" className="text-blue-500 hover:text-blue-400 mb-8 inline-block transition-colors">
-          ← Volver al inicio
+          ← Back to Home
         </Link>
         
-        <h1 className="text-4xl font-bold mb-8">Términos de Servicio</h1>
+        <h1 className="text-4xl font-bold mb-8">Terms of Service</h1>
         
         <div className="space-y-6 text-zinc-300 leading-relaxed">
-          <p><strong>Última actualización:</strong> Abril de 2026</p>
+          <p><strong>Last Updated:</strong> April 2026</p>
           
-          <h2 className="text-2xl font-semibold text-white mt-8">1. Aceptación de los Términos</h2>
+          <h2 className="text-2xl font-semibold text-white mt-8">1. Acceptance of Terms</h2>
           <p>
-            Al acceder y utilizar los servicios de nuestra Agencia de Automatización, usted acepta estar sujeto a estos Términos de Servicio. Si no está de acuerdo con alguna parte de los términos, no podrá utilizar nuestros servicios de integración y desarrollo.
+            By accessing and using the services of Garphus Cloud AI, you agree to be bound by these Terms of Service. If you do not agree with any part of the terms, you may not use our integration and development services.
           </p>
 
-          <h2 className="text-2xl font-semibold text-white mt-8">2. Descripción del Servicio</h2>
+          <h2 className="text-2xl font-semibold text-white mt-8">2. Description of Service</h2>
           <p>
-            Proporcionamos servicios de desarrollo de software, incluyendo la creación de agentes de IA, orquestación de flujos de trabajo mediante n8n y configuración de la API de WhatsApp Business a través de proveedores oficiales.
+            We provide custom software development services, including the creation of AI agents, orchestration of workflows through n8n, and configuration of the WhatsApp Business API through official providers.
           </p>
 
-          <h2 className="text-2xl font-semibold text-white mt-8">3. Uso Aceptable</h2>
+          <h2 className="text-2xl font-semibold text-white mt-8">3. Acceptable Use</h2>
           <p>
-            Usted se compromete a no utilizar nuestros sistemas automatizados para enviar spam, mensajes no solicitados, o cualquier contenido que viole las políticas de Meta, WhatsApp o las leyes locales. El incumplimiento de esta norma resultará en la terminación inmediata del servicio.
+            You agree not to use our automated systems to send spam, unsolicited messages, or any content that violates Meta's, WhatsApp's policies, or local laws. Failure to comply with this rule will result in immediate termination of the service.
           </p>
 
-          <h2 className="text-2xl font-semibold text-white mt-8">4. Limitación de Responsabilidad</h2>
+          <h2 className="text-2xl font-semibold text-white mt-8">4. Limitation of Liability</h2>
           <p>
-            No nos hacemos responsables por bloqueos de cuentas de WhatsApp originados por el mal uso de la API por parte del cliente o por cambios en las políticas de Meta. Nuestro servicio se limita a la configuración e integración tecnológica de las plataformas.
+            Garphus Cloud AI is not responsible for WhatsApp account bans caused by the client's misuse of the API or changes in Meta's platform policies. Our service is limited to the technological configuration and integration of the platforms.
           </p>
         </div>
       </div>
